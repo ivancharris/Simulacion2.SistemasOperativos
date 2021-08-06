@@ -14,7 +14,6 @@ public class Jugador implements Serializable {
     private String nacionalidad;
     private String club;
     private int numero_camiseta;
-    private int consecutivo;
 
     public Jugador() {
     }
@@ -83,12 +82,9 @@ public class Jugador implements Serializable {
         this.numero_camiseta = numero_camiseta;
     }
 
-    public int getConsecutivo() { return consecutivo; }
-
-    public void setConsecutivo(int consecutivo) { this.consecutivo = consecutivo; }
 
     public Jugador(String nombre, int age, LocalDate nacimiento,
-                   int height_cm, int weight_kg, String nationality, String club, int team_jersey_number, int consecutivo) {
+                   int height_cm, int weight_kg, String nationality, String club, int team_jersey_number) {
         super();
         this.nombre = nombre;
         this.edad = age;
@@ -98,13 +94,11 @@ public class Jugador implements Serializable {
         this.nacionalidad = nationality;
         this.club = club;
         this.numero_camiseta = team_jersey_number;
-        this.consecutivo = consecutivo;
     }
 
     @Override
     public String toString() {
         return "Jugador{" +
-                "consecutivo='" + getConsecutivo() + '\'' +
                 "Nombre='" + getNombre() + '\'' +
                 ", edad=" + getEdad() + '\'' +
                 ", altura='" + getAltura() + '\'' +

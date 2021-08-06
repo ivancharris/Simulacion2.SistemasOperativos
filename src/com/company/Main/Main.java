@@ -3,11 +3,8 @@ import com.company.UI.UI;
 import com.company.gestor_archivos.Archivos;
 import com.company.persona.Jugador;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.io .*;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -41,7 +38,7 @@ public class Main {
                 switch (opcion) {
                     case 1:
                         System.out.println("Ingrese el nombre a consultar: ");
-                        String nombre = scanner.next();
+                        String nombre = scanner.next().toUpperCase();
 
                         for(int i=0; i < player.size();i++){
                             if (player.get(1).getNombre().contains(nombre)){

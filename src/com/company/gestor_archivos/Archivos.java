@@ -17,7 +17,6 @@ public class Archivos {
         public Jugador dataPersona(String currentData, int i) throws IOException {
             Jugador newPersona = new Jugador();
             String[] data = currentData.split(",");
-            newPersona.setConsecutivo(i);
             newPersona.setNombre(data[0]);
             newPersona.setEdad(Integer.parseInt(data[1]));
             newPersona.setAltura(Integer.parseInt(data[3]));
