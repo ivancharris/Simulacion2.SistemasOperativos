@@ -10,5 +10,6 @@ public class UI {
         System.out.println("4) Filtrar por peso");
         System.out.println("5) Filtrar por altura");
         System.out.println("6) Filtrar por edad \n");
+        System.out.println("7) Salir de consulta \n");
     }
 }
